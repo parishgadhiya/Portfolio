@@ -4,7 +4,6 @@ import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaPhoneAlt, FaPaperPlane
 import '../assets/css/Contact.css';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState({ type: '', message: '' });
@@ -26,7 +25,7 @@ const Contact = () => {
       return;
     }
 
-    // TODO: Replace with your actual EmailJS credentials
+    // TODO: Ensure these credentials are correct and match your EmailJS account
     const serviceId = 'service_u24dehj';
     const templateId = 'template_wribva4';
     const publicKey = 'tmgjCSLFviyrzlQcJ';
